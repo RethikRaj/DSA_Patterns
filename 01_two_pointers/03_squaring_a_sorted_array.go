@@ -4,7 +4,7 @@ package two_pointers
 // containing the squares of all numbers, also in sorted order.
 func squaring_a_sorted_array_solution_1(nums []int) []int {
 	// 1. Find the index of the first non-negative number (the "pivot")
-	i := len(nums)
+	i := len(nums) // To handle the case of no non-negative numbers
 	for index, num := range nums {
 		if num >= 0 {
 			i = index
